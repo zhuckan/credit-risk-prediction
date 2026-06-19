@@ -88,31 +88,24 @@ credit-risk-prediction/
 2. Install the necessary dependencies:
    ```bash
    pip install -r requirements.txt
-Place the training data files (train_data_*.pq and train_target.csv) into the data/ directory.
+3. Place the training data files (train_data_*.pq and train_target.csv) into the data/ directory.
 
-Running the Pipeline
+## Running the Pipeline
 Open and execute the good_job.ipynb notebook to perform:
 
-Data loading and aggregation.
+- Data loading and aggregation.
+- Feature engineering.
+- Model training and evaluation.
 
-Feature engineering.
+The trained pipeline will be exported as credit_risk_pipeline.pkl in the models/ directory. The predictions on the test set will be saved as predictions.csv in the project root.
 
-Model training and evaluation.
-
-The trained pipeline will be exported as credit_risk_pipeline.pkl in the models/ directory.
-
-The predictions on the test set will be saved as predictions.csv in the project root.
-
-Performance Requirements
+## Performance Requirements
 This project fulfills the following criteria outlined in the technical assignment:
 
-Metric Quality: ROC-AUC exceeds 0.75 on the test set.
+- Metric Quality: ROC-AUC exceeds 0.75 on the test set.
+- Data Handling: Implements iterative processing to handle large Parquet datasets.
+- Pipeline Implementation: Uses sklearn.pipeline for a streamlined fit and predict workflow.
+- Experiments: Conducted multiple experiments for feature selection and algorithm comparison.
 
-Data Handling: Implements iterative processing to handle large Parquet datasets.
-
-Pipeline Implementation: Uses sklearn.pipeline for a streamlined fit and predict workflow.
-
-Experiments: Conducted multiple experiments for feature selection and algorithm comparison.
-
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
