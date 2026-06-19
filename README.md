@@ -82,10 +82,14 @@ To explore the problem-solving approach, simply open the good_job.ipynb file dir
 If you wish to run the code and retrain the model locally, follow these steps:
 1. Clone the repository to your computer.
 2. Install the dependencies from requirements.txt:
-bash
+
+```bash
 pip install -r requirements.txt
+```
+
 3.Download the training files (train_data_*.pq and train_target.csv) separately and place them into a local data/ folder.
 4. Open and run the good_job.ipynb notebook.
+
 ## Performance Requirements
 This project fulfills the following criteria outlined in the technical assignment:
 - Metric Quality: ROC-AUC exceeds 0.75 on the test set.
