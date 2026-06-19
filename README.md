@@ -75,8 +75,7 @@ credit-risk-prediction/
 │   ├── train_data_*.pq
 │   └── train_target.csv
 └── predictions.csv
-
-text
+```
 
 ## Installation and Usage
 
