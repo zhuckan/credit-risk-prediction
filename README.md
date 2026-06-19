@@ -62,20 +62,19 @@ After extensive experimentation, **CatBoost** was selected as the final model. T
 This result aligns with the technical requirements of the project, meeting the minimum acceptable baseline of 0.75 ROC-AUC.
 
 ## Project Structure
+```text
 credit-risk-prediction/
-├── README.md # Project documentation
-├── requirements.txt # Python dependencies
-├── .gitignore # Files to ignore (data, models, etc.)
+├── README.md
+├── requirements.txt
+├── .gitignore
 ├── models/
-│ └── credit_risk_pipeline.pkl # Saved trained pipeline
+│   └── credit_risk_pipeline.pkl
 ├── notebooks/
-│ └── good_job.ipynb # Jupyter Notebook with full code
-├── data/ # Input data folder (excluded from git)
-│ ├── train_data_*.pq
-│ └── train_target.csv
-└── predictions.csv # Output predictions on test set
-
-text
+│   └── good_job.ipynb
+├── data/
+│   ├── train_data_*.pq
+│   └── train_target.csv
+└── predictions.csv
 
 ## Installation and Usage
 
