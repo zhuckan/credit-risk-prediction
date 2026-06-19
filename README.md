@@ -87,7 +87,8 @@ If you wish to run the code and retrain the model locally, follow these steps:
 pip install -r requirements.txt
 ```
 
-3.Download the training files (train_data_*.pq and train_target.csv) separately and place them into a local data/ folder.
+3. Download the training files (train_data_*.pq and train_target.csv) separately and place them into a local data/ folder.
+
 4. Open and run the good_job.ipynb notebook.
 
 ## Performance Requirements
