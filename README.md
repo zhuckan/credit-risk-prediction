@@ -62,3 +62,57 @@ After extensive experimentation, **CatBoost** was selected as the final model. T
 This result aligns with the technical requirements of the project, meeting the minimum acceptable baseline of 0.75 ROC-AUC.
 
 ## Project Structure
+credit-risk-prediction/
+├── README.md # Project documentation
+├── requirements.txt # Python dependencies
+├── .gitignore # Files to ignore (data, models, etc.)
+├── models/
+│ └── credit_risk_pipeline.pkl # Saved trained pipeline
+├── notebooks/
+│ └── good_job.ipynb # Jupyter Notebook with full code
+├── data/ # Input data folder (excluded from git)
+│ ├── train_data_*.pq
+│ └── train_target.csv
+└── predictions.csv # Output predictions on test set
+
+text
+
+## Installation and Usage
+
+### Prerequisites
+- Python 3.9 or higher.
+- PyArrow (required for reading Parquet files).
+
+### Installation Steps
+1. Clone the repository to your local machine.
+2. Install the necessary dependencies:
+   ```bash
+   pip install -r requirements.txt
+Place the training data files (train_data_*.pq and train_target.csv) into the data/ directory.
+
+Running the Pipeline
+Open and execute the good_job.ipynb notebook to perform:
+
+Data loading and aggregation.
+
+Feature engineering.
+
+Model training and evaluation.
+
+The trained pipeline will be exported as credit_risk_pipeline.pkl in the models/ directory.
+
+The predictions on the test set will be saved as predictions.csv in the project root.
+
+Performance Requirements
+This project fulfills the following criteria outlined in the technical assignment:
+
+Metric Quality: ROC-AUC exceeds 0.75 on the test set.
+
+Data Handling: Implements iterative processing to handle large Parquet datasets.
+
+Pipeline Implementation: Uses sklearn.pipeline for a streamlined fit and predict workflow.
+
+Experiments: Conducted multiple experiments for feature selection and algorithm comparison.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
